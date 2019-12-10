@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     style: `light`,
-    layout: `sidebar`
+    layout: `sidebar`,
   },
   pathPrefix: process.env.PATH_PREFIX || "/",
   plugins: [
@@ -13,14 +13,14 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `yaml`,
-        path: `${__dirname}/src/data`
+        path: `${__dirname}/src/data`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `markdown-pages`,
-        path: `${__dirname}/src/data/posts`
+        path: `${__dirname}/src/data/posts`,
       },
     },
     `gatsby-transformer-remark`,
@@ -32,7 +32,7 @@ module.exports = {
         url: "https://api.github.com/graphql",
         headers: {
           Authorization: `bearer ${process.env.GITHUB_TOKEN}`,
-        }
+        },
       },
     },
   ],

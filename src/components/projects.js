@@ -32,7 +32,7 @@ function Projects() {
   return (
     <>
       <h2 className={style === 'dark' ? "text-white" : ""}>My Projects</h2>
-      <p className={`f4 mb-4 ${style === 'dark' ? 'text-white' : 'text-gray'}`}>GitHub repositories that I've built.</p>
+      <p className={`f4 mb-4 ${style === 'dark' ? 'text-white' : 'text-gray'}`}>GitHub Repositories</p>
       <div className="d-sm-flex flex-wrap gutter-condensed mb-4">
         {repositories.nodes.map((repository, i) => (
           <div key={i} className="col-sm-6 col-md-12 col-lg-6 col-xl-4 mb-3">
